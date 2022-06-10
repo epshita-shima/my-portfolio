@@ -4,6 +4,8 @@ import Contact from './components/Contact/Contact';
 import Hello from './components/Home/Hello';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
+import Project from './components/Projects/Project';
+import ProjectDetails from './components/Projects/ProjectDetails';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
 
@@ -16,6 +18,7 @@ function App() {
         <Route path='/hello' element={<Hello></Hello>}></Route>
         <Route path='/resume' element={<Resume></Resume>}></Route>
         <Route path='/projects' element={<Projects></Projects>}></Route>
+        <Route path='/projects/:projectId' element={<ProjectDetails></ProjectDetails>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
       </Routes>
     </div>

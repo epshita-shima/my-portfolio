@@ -3,8 +3,8 @@ import React from 'react';
 const Contact = () => {
     return (
         <div className='bg-gradient-to-r from-violet-500 to-fuchsia-400'>
-            <div className='lg:container lg:p-0 sm:p-12 lg:mx-auto mt-24 lg:flex sm:block items-center '>
-                <div className='pt-24 mb-16'>
+            <div className='lg:container lg:p-0 p-8 lg:mx-auto mt-24 lg:flex block items-center '>
+                <div className='pt-24 mb-8 lg:mb-16'>
                     <h2 className='text-5xl text-white font-bold mb-12 tracking-widest'>Get in touch_</h2>
                     <p className='text-white text-xl font-semibold mb-2'><span>Phone:</span> +880 1757092331</p>
                     <p className='text-white text-xl font-semibold mb-4'><span>Email:</span> epshitashima@gmail.com</p>
