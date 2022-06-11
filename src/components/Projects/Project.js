@@ -6,6 +6,7 @@ const Project = ({ project }) => {
     const navigate = useNavigate();
     const navigateProjectDetails = id => {
         navigate(`projects/${id}`)
+
     }
 
     return (
