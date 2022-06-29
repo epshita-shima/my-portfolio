@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Project = ({ project }) => {
-    const { id, img, name, description, details1, details2, details3, details4, live } = project;
+    const { _id, img, name, description, details1, details2, details3, details4 } = project;
     const navigate = useNavigate();
-    const navigateProjectDetails = id => {
-        navigate(`projects/${id}`)
-
+    const navigateProjectDetails = _id => {
+        navigate(`projects/${_id}`)
     }
 
     return (
@@ -23,9 +21,8 @@ const Project = ({ project }) => {
                     <button className='border-2 p-2 rounded text-xl'>{details3}</button>
                     <button className='border-2 p-2 rounded text-xl'>{details4}</button>
                 </div>
-                <div className='flex justify-center items-center mt-8'>
-                    <button onClick={() => navigateProjectDetails(id)} className='btn btn-primary'>Project details</button>
-                    <p className='text-end text-primary text-xl mt-4 ml-4'><a href="https://adoring-feynman-dd5b1e.netlify.app">{live}</a></p>
+                <div className='ml-10 mt-8'>
+                    <button onClick={() => navigateProjectDetails(_id)} className='btn btn-primary'>Project details</button>
                 </div>
             </div>
         </div>

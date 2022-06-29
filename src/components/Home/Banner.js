@@ -4,17 +4,23 @@ import { faGithub, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-i
 import React from 'react';
 import portfolio from '../../assets/image/portfolio.png'
 import './Banner.css';
+import Typical from 'react-typical';
 
 const Banner = () => {
     return (
-        <div className='  mt-16 lg:mt-24 bg-gradient-to-r from-violet-500 to-fuchsia-400 '>
+        <div className='bg-gradient-to-r from-violet-500 to-fuchsia-400 '>
             <div div className='flex pt-24 pb-16 lg:container lg:mx-auto' >
                 <div className='lg:flex hidden'>
                     <img className='h-96 w-full  bg-black bg-opacity-40 rounded' src={portfolio} alt="" />
                 </div>
                 <div className='ml-8 lg:14'>
                     <div>
-                        <h2 className='text-5xl text-white font-bold tracking-wide mb-2'>Epshita Shima_</h2>
+                        <h2 className='text-5xl text-white font-bold tracking-wide mb-2'>
+                            <Typical
+                                steps={['Epshita Shima_', 1000]}
+                                loop={Infinity}
+                                wrapper="p"
+                            ></Typical></h2>
                         <p className='text-xl font-semibold text-white mb-8'>frontend developer, wordpress developer</p>
 
                         <h3 className='text-white text-xl lg:text-2xl md:text-2xl font-semibold mb-4'><span className='opacity-40 mr-6'>Age:</span>25</h3>

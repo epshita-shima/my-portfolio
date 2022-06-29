@@ -1,11 +1,20 @@
 import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
+import Typical from 'react-typical';
 
 const Resume = () => {
     return (
         <div className='lg:container pl-8 pr-8 sm:p-12 md:p-12 lg:p-0  lg:mx-auto lg:mt-24 mb-16'>
+
             <div>
-                <h2 className='text-5xl text-gray-600 mb-8'>Resume_</h2>
+
+                <h2 className='text-5xl text-gray-600 mb-8'>
+                    <Typical
+                        steps={['Resume_', 1000]}
+                        loop={5}
+                        wrapper="p"
+                    ></Typical>
+                </h2>
                 <p className='text-2xl text-justify text-gray-500 leading-9 lg:leading-8 mb-16'>Build up a career in a challenging and rewarding position at any winning organization where
                     creativity, sincerity, leadership, term values, and performance are the criteria for one's appraisal and
                     recognition. Working quickly and carefully to complete small edits requested by customers, develop plans for completing larger projects, and suggest new solutions to improve existing websites. Comfortable working with Bootstrap, Tailwind, JavaScript, React.js, Node.js, Firebase Authentication, and MongoDB.</p>
