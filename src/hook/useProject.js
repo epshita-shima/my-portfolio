@@ -4,7 +4,7 @@ const useProject = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/projects')
+        fetch('https://boiling-hollows-61344.herokuapp.com/projects')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])

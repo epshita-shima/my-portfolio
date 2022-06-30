@@ -9,7 +9,7 @@ const ProjectDetails = () => {
     const [project, setProject] = useState('');
 
     useEffect(() => {
-        const url = `http://localhost:5000/projects/${projectId}`;
+        const url = `https://boiling-hollows-61344.herokuapp.com/projects/${projectId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProject(data))
