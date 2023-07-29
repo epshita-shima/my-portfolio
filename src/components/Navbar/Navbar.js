@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const menuItem = <>
 
-        <li className='text-primary font-bold text-xl'><Link to='/'>Home</Link></li>
-        <li className='text-primary font-bold text-xl'><Link to='/hello'>Hello</Link></li>
-        <li className='text-primary font-bold text-xl'><Link to='/resume'>Resume</Link></li>
-        <li className='text-primary font-bold text-xl'><Link to='/projects'>Projects</Link></li>
-        <li className='text-primary font-bold text-xl'><Link to='/blog'>Blog</Link></li>
-        <li className='text-primary font-bold text-xl'><Link to='/contact'>Contact</Link></li>
+        <li className='text-[#858792] font-bold text-xl'><Link to='/'>Home</Link></li>
+        <li className='text-[#858792] font-bold text-xl'><Link to='/hello'>Hello</Link></li>
+        <li className='text-[#858792] font-bold text-xl'><Link to='/resume'>Resume</Link></li>
+        <li className='text-[#858792] font-bold text-xl'><Link to='/projects'>Projects</Link></li>
+        <li className='text-[#858792] font-bold text-xl'><Link to='/blog'>Blog</Link></li>
+        <li className='text-[#858792] font-bold text-xl'><Link to='/contact'>Contact</Link></li>
 
 
 
     </>
     return (
 
-        <div class="navbar shadow bg-base-100">
+        <div class="navbar shadow">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
