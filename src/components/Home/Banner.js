@@ -6,9 +6,11 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import portfolio from "../../assets/image/portfolio.png";
+import portfolio from "../../assets/image/1701064092198-removebg-preview.png";
+
 import "./Banner.css";
 import Typical from "react-typical";
+import Src from "daisyui";
 
 const Banner = () => {
   return (
@@ -16,22 +18,19 @@ const Banner = () => {
       <div div className="flex justify-between items-center pt-24 pb-16 lg:container lg:mx-auto">
         <div className="ml-8 lg:14">
           <div>
-            <h2 className="text-5xl text-white font-bold tracking-wide mb-2">
-              <Typical
+            <h3 className="text-5xl text-white font-bold tracking-wide mb-2"> Epshita Shima
+              {/* <Typical
                 steps={["Epshita Shima", 1000]}
                 loop={Infinity}
                 wrapper="p"
-              ></Typical>
-            </h2>
+              ></Typical> */}
+            </h3>
             <p className="text-xl font-semibold text-white mb-8">
               software engineer
             </p>
 
             <h3 className="text-white text-xl lg:text-2xl md:text-2xl font-semibold mb-4">
-              <span className="opacity-40 mr-6">Age:</span>25
-            </h3>
-            <h3 className="text-white text-xl lg:text-2xl md:text-2xl font-semibold mb-4">
-              <span className="opacity-40 mr-6">Phone:</span> +880 1757092331
+              <span className="opacity-40 mr-6">Phone:</span> +880 1793651031
             </h3>
             <h3 className="text-white text-xl lg:text-2xl md:text-2xl font-semibold mb-4">
               <span className="opacity-40 mr-6">Email:</span>{" "}
@@ -70,8 +69,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="warping">
-<div className="icon"></div>
-<div className="content"></div>
+<img style={{borderRadius:'50%'}} src={portfolio} alt="portfolio" />
       </div>
       </div>
       
